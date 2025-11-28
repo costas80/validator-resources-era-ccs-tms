@@ -56,7 +56,7 @@ curl -X POST "https://www.itb.ec.europa.eu/shacl/CCSTMS/api/validate" \
   -d '{
     "contentToValidate": "<your-rdf-content>",
     "contentSyntax": "text/turtle",
-    "validationType": "infrastructure"
+    "validationType": "infra.v1.3"
   }'
 ```
 
@@ -123,7 +123,9 @@ The validator uses three severity levels as defined by SHACL:
 - [ERA Ontology Repository](https://gitlab.com/era-europa-eu/public/interoperable-data-programme/era-ontology/era-ontology/-/tree/ext-ccstms)
 - [ERA Website](https://www.era.europa.eu/)
 - [Europe's Rail Joint Undertaking](https://rail-research.europa.eu/system_pillar/)
+- [SPT2 CONEMP](https://polarion.rail-research.europa.eu/polarion/#/project/SPT2TS/wiki/CCS_TMS%20Data%20Model/TCCS%20-%20Cover%20Document%20CCS_TMS%20ERA%20Extension)
 - [ITB RDF Validation Guide](https://www.itb.ec.europa.eu/docs/guides/latest/validatingRDF/)
+- [SPARQL Query Language](https://www.w3.org/TR/sparql11-query/)
 - [SHACL Specification](https://www.w3.org/TR/shacl/)
 
 ## Contributing
@@ -141,7 +143,7 @@ When contributing SHACL shapes, please ensure:
 - Shapes are well-documented with comments
 - Messages are provided in English (and other languages if applicable), and mention the applicable CCSTMS version
 - Test cases are provided
-- Shapes validate correctly using the [ITB SHACL Shape Validator](https://www.itb.ec.europa.eu/shacl/shacl/upload)
+- Shapes validate correctly using the [ITB SHACL Shape Validator](https://www.itb.ec.europa.eu/shacl/any/upload)
 
 ## License
 
