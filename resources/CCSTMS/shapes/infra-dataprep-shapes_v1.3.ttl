@@ -631,7 +631,7 @@ era:LinearElementGeometryExistenceShape a sh:NodeShape ;
             }
         }
     """ ;
-    sh:severity sh:Warning ;  # Warning
+    sh:severity sh:Warning ;
 	] .
 
 
@@ -652,7 +652,6 @@ era:CantSamplePointCongruenceShape a sh:NodeShape ;
             WHERE {
                 ?leg a era:LinearElementGeometry .
                 
-                # Extract LinearElement ID from both URIs (handles both patterns)
                 # Sample Pattern: .../ClassName/LE123 -> LE123
                 BIND(REPLACE(STR($this), "^.*/([^/]+)$", "$1") AS ?thisId)
                 BIND(REPLACE(STR(?leg), "^.*/([^/]+)$", "$1") AS ?legId)
